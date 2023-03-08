@@ -6,5 +6,5 @@ while i >= 97:
         print("{}".format(chr(i - 32)), end="")
     else:
         print("{}".format(chr(i)), end="")
-    i--
-    j++
+    i = i - 1
+    j = j + 1
