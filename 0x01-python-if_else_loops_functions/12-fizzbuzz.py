@@ -5,7 +5,7 @@ def fizzbuzz():
             print("Buzz ")
         else:
             if (i > 0 and i % 3 == 0 and i % 5 == 0):
-                print("FizzBuzz", end=", ")
+                print("FizzBuzz", end=" ")
             elif (i > 0 and i % 3 == 0):
                 print("Fizz", end=" ")
             elif (i > 0 and i % 5 == 0):
