@@ -18,12 +18,20 @@ class Square:
 
     @property
     def size(self):
+        """get the value of the size of the square
+        Return:
+            __size (int): the size of the square
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
+        """ set the value for th size of the square"""
         slef.__size = value
 
     def area(self):
-        """public instance method called area"""
+        """public instance method called area
+        Return:
+            area (int): the area of the square
+        """
         return self.__size ** 2
