@@ -27,7 +27,7 @@ class Square:
     @size.setter
     def size(self, value):
         """ set the value for th size of the square"""
-        slef.__size = value
+        self.__size = value
 
     def area(self):
         """public instance method called area
