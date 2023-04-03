@@ -36,3 +36,13 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    """public instance method to find the area of rectangle """
+    def area(self):
+        return self.__height * self.__width
+
+    """ public instance method to find the permeter of ractangle """
+    def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return 2*(slef.__height + self.__width)
