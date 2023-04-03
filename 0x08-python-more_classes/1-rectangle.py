@@ -4,7 +4,7 @@
 class Rectangle:
     """ instantiate aclass Rectangle """
 
-    def __inti__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
 
