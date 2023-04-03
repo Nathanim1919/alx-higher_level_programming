@@ -54,10 +54,12 @@ class Rectangle:
 
     """ Returns a string representation of the Rectangle instance """
     def __str__(self):
-        if self.__width == 0 or self.__height == 0:
-            return ""
+        if (self.height != 0 and self.width != 0):
+            a = self.width * "{0!s}".format(self.print_symbol) + "\n"
+            b = self.width * "{0!s}".format(self.print_symbol)
+            return ((self.height - 1) * a + b)
         else:
-            return "\n".join([str(Rectangle.print_symbol) * self.__width] * self.__height)
+            return ("")
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
