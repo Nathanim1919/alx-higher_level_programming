@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-""" this module contains two classes"""
+"""Module Mylist
+Creates a class inheriting from list class
+"""
 
-class list:
-    """" abase class called list"""
-    pass
 
 class MyList(list):
-    """ child class called MyList"""
+    """Class MyList inherits from list"""
 
     def print_sorted(self):
-        return sorted(dir(self))
+        """Prints the list, in ascending order"""
+
+        new_list = self[:]
+        new_list.sort()
+        print("{}".format(new_list))
+
