@@ -2,12 +2,14 @@
 """ this module containe a class called BaseGeometry """
 
 class BaseGeometry:
+
     """ 
     -Base class for geometry objects.
 
     """
 
     def area(self):
+
         """
         calculate the are of the geomtry object.
 
