@@ -1,19 +1,15 @@
 #!/usr/bin/python3
-""" this module containe a class called BaseGeometry """
+"""Module base_geometry
+Creates a class
+"""
+
 
 class BaseGeometry:
-    
-    """ 
-    -Base class for geometry objects.
-
-    """
+    """Class with public instance method"""
 
     def area(self):
-
+        """Raises an Exception with the message
+        'area() is  not implemented'
         """
-        calculate the are of the geomtry object.
 
-        Raises:
-        - NotImplementedError: if the method is not implemented by the subclass.
-        """
-        raise NotImplementedError("area() is not implemented")
+        raise Exception('area() is not implemented')
