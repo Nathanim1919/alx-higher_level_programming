@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" this modlue includes an empty class """
+""" Module BaseGeometry
+Create an empty class"""
 
 class BaseGeometry:
     """ this is a empty class"""
