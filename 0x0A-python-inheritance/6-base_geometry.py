@@ -2,7 +2,7 @@
 """ this module containe a class called BaseGeometry """
 
 class BaseGeometry:
-
+    
     """ 
     -Base class for geometry objects.
 
