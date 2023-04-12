@@ -12,4 +12,10 @@ def inherits_from(obj, a_class):
     Returns:
     -True if an object is an instance of a class that inhirited from the specified class.
     """
-    return issubclass(type(obj), a_class)
+    if issubclass(type(obj), a_class):
+        return True
+
+    for base_class in type(obj).__bases__:
+        if inherits_from(base_class, a_class):
+            return True
+    return False
