@@ -1,32 +1,23 @@
 #!/usr/bin/python3
-""" a module includes abase class BaseGeometry """
+"""Module base_Geometry
+Creates a BaseGeometry class
+"""
+
 
 class BaseGeometry:
-    """ abase class """
+    """Class with public instance methods"""
 
     def area(self):
+        """Raises an Exception with the message
+        'area() is not implemented'
         """
-        calculates the area of geometry
 
-        Raises:
-        - NotImplementedError
-
-        """
-        raise NotImplementedError("area() is not implemented")
+        raise Exception('area() is not implemented')
 
     def integer_validator(self, name, value):
-        """
-        an integer validator public instance method
+        """Validates value"""
 
-        Args:
-        - name: always string type
-        - value: an integer type
-
-        Raise:
-        - TypeError: if value is not instance of int
-        - ValueError: if value if lessthan or equal to 0
-        """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
