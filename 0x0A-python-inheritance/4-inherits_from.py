@@ -9,12 +9,11 @@ def inherits_from(obj, a_class):
     a class that inherited from the specified class.
 
     Args:
-    -obj: an object
-    -a_class: a class or type
+         -obj: an object
+         -a_class: a class or type
 
-    Returns:
-    -True if an object is an instance of a class
-    that inhirited from the specified class.
+    Returns: -True if an object is an instance of a class
+                that inhirited from the specified class.
     """
 
 
