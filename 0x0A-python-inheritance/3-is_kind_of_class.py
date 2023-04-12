@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" a module that contains is_kind_of_class function """
 def is_kind_of_class(obj, a_class):
     """
     -checks if an object is an instance of , or if the object is an insatnce of a class that inhirited from.
