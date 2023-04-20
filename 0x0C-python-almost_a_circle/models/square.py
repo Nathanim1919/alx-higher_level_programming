@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""this module inherits from Base class the Base module"""
+"""this module inherits from Rectangle class the Base module"""
 
-from models.base import Base
+from models.rectangle import Rectangle
 
-class Square(Base):
+class Square(Rectangle):
     """Class that defines a Square"""
 
     def __init__(self, size, x=0, y=0, id=None):
