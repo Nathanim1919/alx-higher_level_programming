@@ -12,3 +12,16 @@ class Square(Rectangle):
     def __str__(self):
         """Returns string representation of the object"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+    
+
+    @property
+    def size(self):
+        """getter method fro size property"""
+        return self.size
+    
+
+    @size.setter
+    def size(self, value):
+        """ setter for size property"""
+        self.width = value
+        self.height = value
