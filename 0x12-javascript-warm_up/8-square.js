@@ -3,9 +3,11 @@
 if (isNaN(process.argv[2])) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < Number(process.argv[2]); i++) {
-    for (let j = 0; j < Number(process.argv[2]); j++) {
-      process.stdout.write('x');
+  const size = Number(process.argv[2]);
+
+  for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
+      process.stdout.write('X');
     }
     process.stdout.write('\n');
   }
