@@ -1,5 +1,6 @@
 #!/usr/bin/node
-function factorial(n) {
+
+function factorial (n) {
   if (isNaN(n) || n < 2) {
     return (1);
    } else {
