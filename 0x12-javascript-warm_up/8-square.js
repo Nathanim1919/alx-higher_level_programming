@@ -7,6 +7,5 @@ if (isNaN(process.argv[2])) {
     for (let j = 0; j < Number(process.argv[2]); j++) {
       process.stdout.write('x');
     }
-    console.log('\n');
   }
 }
