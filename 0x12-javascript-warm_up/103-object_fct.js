@@ -5,5 +5,5 @@ const myObject = {
 };
 
 myObject.incr = function() {
-  myObject.value += 1;
+  this.alue += 1;
 }
