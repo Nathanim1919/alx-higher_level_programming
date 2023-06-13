@@ -1,10 +1,10 @@
 #!/usr/bin/node
 
-if (process.argv.length <= 1) {
-  console.log('0');
+if (process.argv.length <= 2) {
+  console.log(0);
 } else {
-  let max1 = process.argv[0];
-  let max2 = process.argv[0];
+  let max1 = process.argv[2];
+  let max2 = process.argv[2];
 
   for (let i = 0; i < process.argv.length; i++) {
     if (max1 < process.argv[i]) {
