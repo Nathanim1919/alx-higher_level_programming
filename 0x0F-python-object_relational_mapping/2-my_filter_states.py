@@ -19,7 +19,7 @@ if __name__ == '__main__':
                 )
         cursor = db.cursor()
 
-        cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(sys.argv[4]))
+        cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC".format(sys.argv[4]))
 
     except Exception:
         print("Failed to connect with databse")
