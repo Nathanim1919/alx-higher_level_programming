@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-    takes in an argument and displays all values
-    in the states table of hbtn_0e_0_usa
-    where name matches the argument
+takes in an argument and displays all values
+in the states table of hbtn_0e_0_usa
+where name matches the argument
 
 """
 if __name__ == '__main__':
@@ -11,12 +11,12 @@ if __name__ == '__main__':
 
     try:
         db = MySQLdb.connect(
-                host="localhost",
-                port=3306,
-                user=sys.argv[1],
-                passwd=sys.argv[2],
-                db=sys.argv[3]
-                )
+            host="localhost",
+            port=3306,
+            user=sys.argv[1],
+            passwd=sys.argv[2],
+            db=sys.argv[3]
+            )
         cursor = db.cursor()
 
         cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC".format(sys.argv[4]))
@@ -30,4 +30,4 @@ if __name__ == '__main__':
         exit(0)
 
     cursor.close()
-    db.close();
+    db.close()
