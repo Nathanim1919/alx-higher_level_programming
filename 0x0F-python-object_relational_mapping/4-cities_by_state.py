@@ -19,7 +19,10 @@ if __name__ == '__main__':
             )
         cursor = db.cursor()
 
-        cursor.execute("SELECT * FROM cities ORDER BY cities.id ASC")
+        cursor.execute("SELECT cities.id, cities.name, states.name\
+                        FROM cities LEFT JOIN states\
+                        ON states.id = cities.sate_id\
+                        ORDER BY cities.id ASC")
 
         result = cursor.fetchall()
         for row in result:
