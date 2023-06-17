@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-    ascript that takes an argument and displays all values
-    in the states table of hbtn_0e_0_usa where name matches
-    the argumet
+    takes in an argument and displays all values
+    in the states table of hbtn_0e_0_usa
+    where name matches the argument
 
 """
 if __name__ == '__main__':
@@ -19,7 +19,7 @@ if __name__ == '__main__':
                 )
         cursor = db.cursor()
 
-        cursor.execute("SELECT * FROM states WHERE name LIKE '{}' ORDER BY id ASC").format(sys.argv[4])
+        cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC").format(sys.argv[4])
 
     except Exception:
         print("Failed to connect with databse")
