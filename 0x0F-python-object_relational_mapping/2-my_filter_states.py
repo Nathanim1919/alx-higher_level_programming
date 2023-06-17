@@ -21,6 +21,10 @@ if __name__ == '__main__':
 
         cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC".format(sys.argv[4]))
 
+        result = cursor.fetchall()
+        for row in result:
+            print(row)
+
     except Exception:
         print("Failed to connect with databse")
         exit(0)
