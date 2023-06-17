@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """ a script that takes in arguments and displays all values in the states table
     of hbtn_0e_0_usa where name matches the argument.
      script should take 4 arguments: mysql username, mysql password, database name
@@ -28,3 +29,6 @@ if __name__ == '__main__':
     except Exception:
         print("Failed to connect with database")
         exit(0)
+
+    cursor.close()
+    db.close()
