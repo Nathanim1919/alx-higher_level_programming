@@ -4,6 +4,7 @@
 if __name__ == '__main__':
 
     import sys
+    from sqlalchemy.schema import Table
     from sqlalchemy import create_engine
     from sqlalchemy.orm import Session
     from model_state import Base, State
