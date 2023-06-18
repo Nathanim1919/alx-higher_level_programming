@@ -3,8 +3,7 @@
 
 if __name__ == '__main__':
 
-    import sys
-    from sqlalchemy.schema import Table
+    import sysi
     from sqlalchemy import create_engine
     from sqlalchemy.orm import Session
     from model_state import Base, State
@@ -14,7 +13,7 @@ if __name__ == '__main__':
 
     Base.metadata.create_all(engine)
 
-    session = Session(True)
+    session = Session(engine)
 
     state = session.query(State).filter(State.id == 2).first()
     state.name = 'New Mexico'
