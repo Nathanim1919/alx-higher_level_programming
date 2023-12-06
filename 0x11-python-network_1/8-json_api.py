@@ -1,20 +1,17 @@
 #!/usr/bin/python3
 """
 Module Name: 8-json_api.py
-Description: a Python script that takes in a letter
-            `and sends a POST request to http://0.0.0.0:5000/search_user
-            `with the letter as a parameter.
+Description: Searches for a given letter with POST request to
+             http://0.0.0.0:5000/search_user
 """
-
-import requests
 import sys
-
+import requests
 
 if __name__ == '__main__':
-    url = 'http://0.0.0.0:5000/search_user'
-    data = {}
-    data['q'] = "" if len(sys.argv) == 1 else sys.argv[1]
-    res = requests.post(url, data)
+    payload = {}
+    payload['q'] = "" if len(sys.argv) == 1 else sys.argv[1]
+
+    res = requests.post('http://0.0.0.0:5000/search_user', data=payload)
     try:
         json_body = res.json()
     except Exception:
@@ -23,4 +20,4 @@ if __name__ == '__main__':
         if len(json_body) != 0:
             print(f"[{json_body.get('id')}] {json_body.get('name')}")
         else:
-            print("No results")
+            print("No result")
