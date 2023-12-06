@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 Module Name: 4-hbtn_status.py
-Description: Write a Python script that fetches https://alx-intranet.hbtn.io/status
+Description: Write a Python script that fetches
+            `https://alx-intranet.hbtn.io/status
 """
 
 import requests
