@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """
 Module Name: 1-hbtn_header.py
-Description: sends a request to the URL and displays the value of the X-Request-Id              variable found in the header of the response.
+Description: sends a request to the URL and displays the value of the
+            `X-Request-Id variable found in the header of the response.
 """
 
 from urllib.request import Request, urlopen
