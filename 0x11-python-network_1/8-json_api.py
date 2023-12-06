@@ -12,10 +12,8 @@ import sys
 
 if __name__ == '__main__':
     url = 'http://0.0.0.0:5000/search_user'
-    data = {'q': sys.argv[1]}
-    if (len(sys.argv) < 1):
-        data.q = ""
-
+    data = {}
+    data['q'] = "" if len(sys.argv) == 1 else sys.argv[1]
     res = requests.post(url, data)
     try:
         json_body = res.json()
